@@ -36,3 +36,15 @@ Now you're ready to run the code in jupyter notebooks. (Note: You might need to 
 ```
 poetry add pandas numpy
 ```
+
+## Getting Started with Docker:
+
+1. Build the docker image from Dockerfile
+```
+docker build -t cognite-python-sdk-project . 
+```
+
+2. Run the docker image
+```
+docker run -p 8888:8888 -v $(pwd):/app cognite-python-sdk-project
+```
